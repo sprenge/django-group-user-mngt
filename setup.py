@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name = 'django-group-user-mngt',
     packages = ['group_user_mngt'],
-    version = '0.1',
+    version = '0.2',
     description = 'Manage groups and user via jtable',
     author = 'Erwin Sprengers',
     author_email = 'sprengee54@gmail.com',
