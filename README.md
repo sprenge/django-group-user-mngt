@@ -20,10 +20,13 @@ url(r'^groupmanagement/', include('group_user_mngt.urls', namespace="gm_space"))
 copy following files
 --------------------
 
+The dist-packages subdirectory in the examples below is just an example.  It all depends on
+how this package was installed (with or without env, ubuntu/windows, ...)
+
 Under static root :
 
-mkdir group_user_mngt 
-cd group_user_mngt 
+mkdir group_user_mngt
+cd group_user_mngt
 cp -r /usr/local/lib/python2.7/dist-packages/group_user_mngt/static/group_user_mngt/* .
 
 under the static root (jtable dependencies)
@@ -38,8 +41,13 @@ cd css
 cp -r /usr/local/lib/python2.7/dist-packages/group_user_mngt/static/css/* .
 cd ..
 
-Group view 
+mkdir group_user_mngt
+cd group_user_mngt
+cp /usr/local/lib/python2.7/dist-packages/group_user_mngt/static/group_user_mngt/* .
+
+Group view
 ----------
+
 http://<FQDN>/groupmanagement/group/update/
 
 Future work
