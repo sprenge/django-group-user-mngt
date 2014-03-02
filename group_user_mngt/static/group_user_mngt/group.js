@@ -1,5 +1,5 @@
 		$(document).ready(function () {
-			$('#GroupUserMngt').jtable({
+			$('#GroupMngt').jtable({
 			title: 'Manage groups',
 			paging: false, //Enable paging
 			pageSize: 10, //Set page size (default: 10)
@@ -33,7 +33,7 @@
                         var $img = $(html);
                         //Open child table when user clicks the image
                         $img.click(function () {
-                            $('#GroupUserMngt').jtable('openChildTable',
+                            $('#GroupMngt').jtable('openChildTable',
                                     $img.closest('tr'),
                                     {
                                         title: userData.record.name + ' - Attached users',
@@ -110,7 +110,7 @@
 												create: false,
 											},
 	                                        'date_joined': {
-	                                            title: 'date joinedd',
+	                                            title: 'date joined',
 	                                            width: '30%',
 												edit: false,
 												create: false,
@@ -132,5 +132,5 @@
 				},
 			}
 			});
-		$('#GroupUserMngt').jtable('load');
+		$('#GroupMngt').jtable('load');
 		});
